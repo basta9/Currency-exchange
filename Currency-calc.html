@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/currency.css">
+    <title>Currency calc</title>
+</head>
+
+<body onload="init()">
+
+    <section>
+        <h2>Check Rates and stuff..</h2>
+        <input type="text" class="amount">
+        <select class="from-coin"></select>
+        <span>TO</span>
+        <select class="to-coin"></select>
+        <button class="convert" onclick="convert()">Convert</button>
+        <div class="result">&nbsp</div>
+        <img src="img/exchange.gif">
+    </section>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/main-service.js"></script>
+</body>
+
+</html>
